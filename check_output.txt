@@ -1,0 +1,40 @@
+
+> rest-express@1.0.0 check
+> tsc
+
+client/src/components/MarkCard.tsx(7,15): error TS2305: Module '"@shared/routes"' has no exported member 'InsertMark'.
+client/src/components/StudentCard.tsx(43,58): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(callbackfn: (previousValue: { id: number; studentId: number; subjectId: number; obtained: string; } & { subject: { id: number; name: string; date: string | null; classId: number; maxMarks: number; }; }, currentValue: { ...; } & { ...; }, currentIndex: number, array: ({ ...; } & { ...; })[]) => { ...; } & { ...; }, initialValue: { ...; } & { ...; }): { ...; } & { ...; }', gave the following error.
+    Type 'string' is not assignable to type '{ id: number; studentId: number; subjectId: number; obtained: string; } & { subject: { id: number; name: string; date: string | null; classId: number; maxMarks: number; }; }'.
+      Type 'string' is not assignable to type '{ id: number; studentId: number; subjectId: number; obtained: string; }'.
+  Overload 2 of 3, '(callbackfn: (previousValue: number, currentValue: { id: number; studentId: number; subjectId: number; obtained: string; } & { subject: { id: number; name: string; date: string | null; classId: number; maxMarks: number; }; }, currentIndex: number, array: ({ ...; } & { ...; })[]) => number, initialValue: number): number', gave the following error.
+    Type 'string' is not assignable to type 'number'.
+client/src/components/StudentCard.tsx(45,38): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+client/src/components/StudentCard.tsx(188,46): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+client/src/components/StudentCard.tsx(205,21): error TS2322: Type '{ id: number; studentId: number; subjectId: number; obtained: string; } & { subject: { id: number; name: string; date: string | null; classId: number; maxMarks: number; }; }' is not assignable to type 'ReactNode'.
+client/src/components/subjects/CreateSubjectDialog.tsx(155,32): error TS7006: Parameter 'sub' implicitly has an 'any' type.
+client/src/hooks/use-marks.ts(2,20): error TS2305: Module '"@shared/routes"' has no exported member 'BulkUpdateMarksInput'.
+client/src/hooks/use-marks.ts(8,41): error TS2339: Property 'bulkUpdate' does not exist on type '{ update: { method: "POST"; path: string; input: ZodObject<{ studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodString; }, "strip", ZodTypeAny, { ...; }, { ...; }>; responses: { ...; }; }; }'.
+client/src/hooks/use-marks.ts(9,27): error TS2339: Property 'bulkUpdate' does not exist on type '{ update: { method: "POST"; path: string; input: ZodObject<{ studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodString; }, "strip", ZodTypeAny, { ...; }, { ...; }>; responses: { ...; }; }; }'.
+client/src/hooks/use-marks.ts(22,24): error TS2339: Property 'bulkUpdate' does not exist on type '{ update: { method: "POST"; path: string; input: ZodObject<{ studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodString; }, "strip", ZodTypeAny, { ...; }, { ...; }>; responses: { ...; }; }; }'.
+client/src/hooks/use-students.ts(2,30): error TS2305: Module '"@shared/routes"' has no exported member 'StudentListResponse'.
+client/src/hooks/use-students.ts(2,56): error TS2305: Module '"@shared/routes"' has no exported member 'CreateStudentRequest'.
+client/src/pages/Home.tsx(80,51): error TS7006: Parameter 'sum' implicitly has an 'any' type.
+client/src/pages/Home.tsx(80,56): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/Home.tsx(81,46): error TS7006: Parameter 'sum' implicitly has an 'any' type.
+client/src/pages/Home.tsx(81,51): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/Home.tsx(196,17): error TS2322: Type '"ghost" | "white"' is not assignable to type '"default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined'.
+  Type '"white"' is not assignable to type '"default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined'.
+client/src/pages/Home.tsx(204,17): error TS2322: Type '"ghost" | "white"' is not assignable to type '"default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined'.
+  Type '"white"' is not assignable to type '"default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined'.
+client/src/pages/StudentDetails.tsx(39,47): error TS7006: Parameter 'm' implicitly has an 'any' type.
+client/src/pages/StudentDetails.tsx(52,14): error TS2345: Argument of type '(prev: EditableMark[]) => (EditableMark | { localId: string; subject: string; date: string; obtained: number; max: number; })[]' is not assignable to parameter of type 'SetStateAction<EditableMark[]>'.
+  Type '(prev: EditableMark[]) => (EditableMark | { localId: string; subject: string; date: string; obtained: number; max: number; })[]' is not assignable to type '(prevState: EditableMark[]) => EditableMark[]'.
+    Type '(EditableMark | { localId: string; subject: string; date: string; obtained: number; max: number; })[]' is not assignable to type 'EditableMark[]'.
+      Type 'EditableMark | { localId: string; subject: string; date: string; obtained: number; max: number; }' is not assignable to type 'EditableMark'.
+        Type '{ localId: string; subject: string; date: string; obtained: number; max: number; }' is not assignable to type 'EditableMark'.
+          Types of property 'obtained' are incompatible.
+            Type 'number' is not assignable to type 'string'.
+server/auth.ts(70,37): error TS7006: Parameter 'err' implicitly has an 'any' type.
+server/auth.ts(70,42): error TS7006: Parameter 'user' implicitly has an 'any' type.
+server/auth.ts(70,48): error TS7006: Parameter 'info' implicitly has an 'any' type.

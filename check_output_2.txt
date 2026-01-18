@@ -1,0 +1,23 @@
+
+> rest-express@1.0.0 check
+> tsc
+
+client/src/components/MarkCard.tsx(17,23): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+client/src/components/MarkCard.tsx(17,23): error TS18048: 'mark.obtained' is possibly 'undefined'.
+client/src/components/MarkCard.tsx(37,46): error TS2345: Argument of type '"subject"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/MarkCard.tsx(68,46): error TS2345: Argument of type '"max"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/MarkCard.tsx(80,46): error TS2345: Argument of type '"date"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/StudentCard.tsx(22,21): error TS2307: Cannot find module '@shared/routes' or its corresponding type declarations.
+client/src/components/subjects/CreateSubjectDialog.tsx(3,31): error TS2307: Cannot find module '@shared/routes' or its corresponding type declarations.
+client/src/components/subjects/CreateSubjectDialog.tsx(155,32): error TS7006: Parameter 'sub' implicitly has an 'any' type.
+client/src/hooks/use-students.ts(2,31): error TS2307: Cannot find module '@shared/routes' or its corresponding type declarations.
+client/src/pages/Home.tsx(76,28): error TS7006: Parameter 's' implicitly has an 'any' type.
+client/src/pages/Home.tsx(79,11): error TS7006: Parameter 'student' implicitly has an 'any' type.
+client/src/pages/Home.tsx(84,14): error TS7006: Parameter 'a' implicitly has an 'any' type.
+client/src/pages/Home.tsx(84,17): error TS7006: Parameter 'b' implicitly has an 'any' type.
+client/src/pages/Home.tsx(155,47): error TS7006: Parameter 'acc' implicitly has an 'any' type.
+client/src/pages/Home.tsx(155,52): error TS7006: Parameter 's' implicitly has an 'any' type.
+client/src/pages/Home.tsx(230,38): error TS7006: Parameter 'student' implicitly has an 'any' type.
+client/src/pages/Home.tsx(230,47): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+client/src/pages/StudentDetails.tsx(29,47): error TS7006: Parameter 'm' implicitly has an 'any' type.
+server/routes.ts(4,21): error TS2307: Cannot find module '@shared/routes' or its corresponding type declarations.

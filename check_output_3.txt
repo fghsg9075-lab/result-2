@@ -1,0 +1,11 @@
+
+> rest-express@1.0.0 check
+> tsc
+
+client/src/components/MarkCard.tsx(17,23): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+client/src/components/MarkCard.tsx(17,23): error TS18048: 'mark.obtained' is possibly 'undefined'.
+client/src/components/MarkCard.tsx(37,46): error TS2345: Argument of type '"subject"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/MarkCard.tsx(68,46): error TS2345: Argument of type '"max"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/MarkCard.tsx(80,46): error TS2345: Argument of type '"date"' is not assignable to parameter of type '"obtained" | requiredKeys<baseObjectOutputType<Omit<{ id: ZodOptional<ZodNumber>; studentId: ZodNumber; subjectId: ZodNumber; obtained: ZodOptional<ZodString>; }, "id">>>'.
+client/src/components/subjects/CreateSubjectDialog.tsx(155,32): error TS7006: Parameter 'sub' implicitly has an 'any' type.
+client/src/pages/StudentDetails.tsx(29,47): error TS7006: Parameter 'm' implicitly has an 'any' type.
